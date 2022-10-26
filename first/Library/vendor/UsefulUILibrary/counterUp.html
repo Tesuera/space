@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counterup</title>
+    <link rel="stylesheet" href="../../boostrap/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container vh-100"></div>
+
+    <div class="container">
+        <div class="row my-4">
+            <div class="col-3 mx-2 border border-dark rounded-4 text-center py-5">
+                <h3 class="aa">123</h3>
+                <p>hello world</p>
+            </div>
+
+            <div class="col-3 mx-2 border border-dark rounded-4 text-center py-5">
+                <h3 class="aa">12323</h3>
+                <p>hello world</p>
+            </div>
+
+            <div class="col-3 mx-2 border border-dark rounded-4 text-center py-5">
+                <h3 class="aa">23</h3>
+                <p>hello world</p>
+            </div>
+        </div>
+        
+    </div>
+
+     <div class="container vh-100"></div>
+</body>
+<script src="../vendor/jquery-3.3.1.min.js"></script>
+<script src="../vendor/counter_up/Counter-Up-master/jquery.counterup.min.js"></script>
+<script src="../../boostrap/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+<script src="../vendor/way_point/lib/jquery.waypoints.min.js"></script>
+
+
+<script>
+    $('.aa').counterUp({
+    delay: 10,
+    time: 1000
+});
+</script>
+</html>

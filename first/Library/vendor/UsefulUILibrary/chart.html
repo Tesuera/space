@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartJs</title>
+    <link rel="stylesheet" href="../../boostrap/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+
+</head>
+<style>
+    #myChart{
+        width: 250px;
+        height: auto;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="row m-3">
+            <div class="col-6">
+                    <div class="card">
+                        <div class="card-header">Chart Design</div>
+                        <div class="card-body">
+                            <canvas id="myChart" width="400px" height="200px"></canvas>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../vendor/chart_js/Chart.min.js"></script>
+    <script src="../../boostrap/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script>
+        const aa = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(aa, {
+            type: 'line',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)' 
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                    ],
+                    borderWidth: 1,
+                    tension : 0
+                },
+                {
+                    label: '# of Votes',
+                    data: [3, 12, 7, 15, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)' 
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                    ],
+                    borderWidth: 1,
+                    tension: 0,
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        </script>
+</body>
+</html>

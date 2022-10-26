@@ -1,0 +1,24 @@
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    display: grid;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0;
+    place-items: center;
+    z-index: 4000;
+    transition: .3s ;
+    background: rgb(255, 255, 255) url(../raws/HomePage/loader.gif);
+    filter: hue-rotate(30deg);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: center;
+}
+
+.loader.showload{
+    opacity: 1;
+ 
+}

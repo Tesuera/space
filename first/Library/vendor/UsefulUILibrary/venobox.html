@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venobo</title>
+    <link rel="stylesheet" href="../vendor/venobox/venobox.css">
+    <link rel="stylesheet" href="../../boostrap/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container venobox ">
+        <div class="row">
+            <div class="col-12 d-flex flex-wrap ">
+                <div class="col-3 m-1">
+                    <a class="venobox" data-gall="myGallery" href="../../image/image1.jpg">
+                        <img src="../../image/image1.jpg" class="img-fluid"/>
+                    </a>
+                </div>
+              
+                <div class="col-3 m-1">
+                    <a class="venobox" data-gall="myGallery" href="../../image/image2.jpg">
+                        <img src="../../image/image2.jpg" class="img-fluid"/>
+                    </a>
+                </div>
+
+                <div class="col-3 m-1">
+                    <a class="venobox" data-gall="myGallery" href="../../image/image3.jpg">
+                        <img src="../../image/image3.jpg" class="img-fluid"/>
+                    </a>
+                </div>
+
+                <div class="col-3 m-1">
+                    <a class="venobox" data-gall="myGallery" href="../../image/image4.png">
+                        <img src="../../image/image4.png" class="img-fluid"/>
+                    </a>
+                </div>
+
+                <div class="col-3 m-1">
+                    <a class="venobox" data-gall="myGallery" href="../../image/image5.jpg">
+                        <img src="../../image/image5.jpg" class="img-fluid"/>
+                    </a>
+                </div>
+
+
+                
+            </div>
+        </div>
+    </div>
+    <script src="../../jQuery/jquery.js"></script>
+    <script src="../../boostrap/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="../vendor/venobox/venobox.min.js"></script>
+
+    <script>
+       $('.venobox').venobox({
+            spinner : 'bounce',
+            framewidth : '300px',
+            frameheight : 'auto'
+       })
+    </script>
+    
+</body>
+</html>
